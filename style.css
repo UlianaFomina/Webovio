@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+img {
+  max-width: 100%;
+}
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header {
+  padding: 24px 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.link {
+  display: inline-flex;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none;
+  color: #d4d6d4;
+  transition: color 0.3s ease-in-out;
+}
+.link svg {
+  width: 10px;
+  height: 17px;
+  fill: currentColor;
+}
+.link span {
+  text-indent: 10px;
+  border-bottom: 1px solid currentColor;
+}
+.link:hover {
+  color: #ffd723;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.burger {
+  --ofset-horizontal: 11px;
+  --ofset-vertical: 14px;
+  position: relative;
+  padding: var(--ofset-vertical) var(--ofset-horizontal);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  background-color: #f5f6f7;
+}
+.burger-line {
+  position: absolute;
+  left: 50%;
+  top: var(--ofset-vertical);
+  display: inline-block;
+  width: calc(100% - var(--ofset-horizontal) * 2);
+  height: 2px;
+  background: #000;
+  transform: translateX(-50%);
+}
+.burger-line:nth-child(2) {
+  top: calc(var(--ofset-vertical) + 5px);
+}
+.burger-line:nth-child(3) {
+  top: calc(var(--ofset-vertical) + 10px);
+}
+
+.hero {
+  padding-bottom: 210px;
+  padding-top: 189px;
+  background-image: url("hero-backround.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-content {
+  max-width: 616px;
+}
+.hero-subtitle {
+  display: inline-flex;
+  margin-bottom: 22px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+}
+.hero-title {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 74px;
+  color: #fff;
+}
+.hero-descr {
+  margin-bottom: 45px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+}
+.hero-link {
+  color: #ffd723;
+}
